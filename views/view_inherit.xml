@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="inherited_view_form_users" model="ir.ui.view">
+        <field name="name">inherit.res.users.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="replace">
+                  <field name="name" string="test"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
